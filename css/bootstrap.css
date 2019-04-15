@@ -5,6 +5,20 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+.box-part{
+    background:#FFF;
+    border-radius:0;
+    padding:60px 10px;
+    margin:30px 0px;
+}
+.text{
+    margin:20px 0px;
+}
+
+.fa{
+     color:#6e6e9c;
+}
+
 .boton{
   display: inline-block;
   font-weight: 400;
@@ -6459,7 +6473,7 @@ a.close.disabled {
   margin-left: 3px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #fff;
+  background-color: #6e6e9c;
   background-clip: padding-box;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
@@ -6475,6 +6489,7 @@ a.close.disabled {
 
 .carousel-indicators .active {
   opacity: 1;
+  color: #6e6e9c;
 }
 
 .carousel-caption {
