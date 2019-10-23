@@ -2,3 +2,6 @@
 Modern-Business-Card-Grid-Mockup.zip
 **/public/
 **/.firebase/
+.firebaserc
+firebase.json
+**/plugins/
