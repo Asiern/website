@@ -4,7 +4,60 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
- /*ANIMATIONS*/
+ 
+ .shadow{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+ @import url('https://fonts.googleapis.com/css?family=Monoton');
+ %bg {
+  padding: 25vmin 0;
+  background-size: cover;
+}
+
+.bg-one {
+  @extend %bg;
+  background-image: url(../img/bg12.jpg);
+  height: 100vh;
+  background-size: auto
+}
+
+.bg-two {
+  @extend %bg;
+  background-image: url(//unsplash.it/800/801);
+}
+
+.bg-three {
+  @extend %bg;
+  background-image: url(//unsplash.it/800/802);
+}
+
+.solid {
+  padding: 25vh 0;
+  background: steelblue;
+  text-align: center;
+  color: white;
+}
+  .cartatext{
+    display: flex; 
+    justify-content: center; 
+    flex-direction: column;
+  }
+  .carta:hover h1{
+    color: #fff;
+  }
+  .carta:hover p{
+    color: #fff;
+  }
+ .carta{
+  background-color: #fff; 
+  text-align: center;  
+ }
+ .carta:hover{
+   background-color: #1F1F1F;
+ }
+ .textheight{
+   height: 80%;
+ }
  .contentalign {
   display: flex;
   align-items: center;
@@ -18,6 +71,10 @@
    font-family: Gotham;
    src: url(../fonts/GothamLight.ttf);
  }  
+ @font-face{
+   font-family: Gotham-Medium;
+   src: url(../fonts/GothamMedium.ttf);
+ }
  .flex-center {
   width: 100%;
   min-height: 50vh;
@@ -140,6 +197,7 @@
 }
 
 .boton{
+  font-family: Gotham-Medium;
   display: inline-block;
   font-weight: 400;
   color: #0D0D0D;
@@ -151,10 +209,10 @@
   user-select: none;
   background-color: transparent;
   border: 1px solid transparent;
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  border-radius: 0.25rem;
+  padding: 0.4rem 1.5rem;
+  font-size: 1.1rem;
+  line-height: 2;
+  border-radius: 0.8rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .boton:hover {
@@ -178,13 +236,13 @@ fieldset:disabled a.boton {
 
 .boton-primary {
   color: #F2F2F2;
-  background-color: #262626;
-  border-color: #0D0D0D;
+  background-color: #000000;
+  border-color: #fff;
 }
 
 .boton-primary:hover {
-  color: #262626;
-  background-color: #F2F2F2;
+  color: #fff;
+  background-color: #D95560;
   border-color: #282828;
 }
 .boton-primaryn {
@@ -263,6 +321,7 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth;
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -774,6 +833,31 @@ pre code {
   .container {
     max-width: 540px;
   }
+  .bgcard1{
+    height: 30vh;
+  }
+  .bgcard2{
+    height: 30vh;
+  }
+  .bgcard3{
+    height: 30vh;
+  }
+  .textheight{
+    height: 100%;
+  }
+  .contentalign{
+    display: table;
+  }
+  .nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    align-items: center;
+  }
 }
 
 @media (min-width: 768px) {
@@ -792,6 +876,37 @@ pre code {
   .container {
     max-width: 1140px;
   }
+  .textheight{
+    height: 80%;
+  }
+  .contentalign {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+ }
+ .bgcard1{
+  height: 100vh;
+  background-color: #F2F2F2;
+}
+
+.bgcard2{
+ height: 100vh;
+ background-color: #0D0D0D;
+}
+
+.bgcard3{
+ height: 100vh;
+ background-color:#F2F2F2;
+}
+.nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
 }
 
 .container-fluid {
@@ -4375,6 +4490,7 @@ input[type="button"].btn-block {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+  background-color: #fff;
 }
 
 .navbar > .container,
