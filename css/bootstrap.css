@@ -4,9 +4,12 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
- 
+ .bgwhite{
+   background-color: #F2F2F2;
+ }
  .shadow{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #F2F2F2;
  }
  @import url('https://fonts.googleapis.com/css?family=Monoton');
  %bg {
@@ -18,7 +21,7 @@
   @extend %bg;
   background-image: url(../img/bg12.jpg);
   height: 100vh;
-  background-size: auto
+  background-size: cover;
 }
 
 .bg-two {
@@ -151,6 +154,17 @@
  .titlen{
   color: #F2F2F2;
   font-family: Gotham;
+  font-size: xx-large;
+}
+.titlenb{
+  color: #F2F2F2;
+  font-family: Gotham-Medium;
+  font-size: 50px;
+}
+.textnw{
+  color: #F2F2F2;
+  font-family: Gotham;
+  font-size: 20px;
 }
  .textn{
   color: #BFBFBF;
@@ -236,14 +250,14 @@ fieldset:disabled a.boton {
 
 .boton-primary {
   color: #F2F2F2;
-  background-color: #000000;
+  background-color: transparent;
   border-color: #fff;
 }
 
 .boton-primary:hover {
-  color: #fff;
-  background-color: #D95560;
-  border-color: #282828;
+  color: #1F1F1F;
+  background-color:#F2F2F2;
+  border-color: transparent;
 }
 .boton-primaryn {
   color: #0D0D0D;
@@ -4490,7 +4504,6 @@ input[type="button"].btn-block {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0.5rem 1rem;
-  background-color: #fff;
 }
 
 .navbar > .container,

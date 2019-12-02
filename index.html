@@ -19,9 +19,9 @@
 </head>
 <!-- #282828 -->
 <!-- Pallete: #F2F2F2 #BFBFBF #737373 #262626 #0D0D0D -->
-<body style="background-color: #fff">
+<body style="background-color: #fff" id="top">
 <!-- NAV -->
-<nav class="mb-1 navbar navbar-expand-lg navbar-dark py-3 shadow" style="position: fixed; width: 100%; z-index: 999;">
+<nav class="mb-1 navbar navbar-expand-lg py-3" style="position: fixed; width: 100%; z-index: 999;" id="nav">
   <a class="navbar-brand" href="index.html" style="width:40px;">
     <img src="logo.svg"/>               
   </a>
@@ -38,17 +38,23 @@
           <span class="sr-only">(current)</span>
         </a>
       </li>
-      <!--li class="nav-item">
-        <a class="nav-link" href="#" style="color: #1F1F1F;">
-          <i class="fa fa-twitch" style="color: #1F1F1F;"></i> Twitch</a>
-      </li-->
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false" style="color: #1F1F1F;">
           <i class="fa fa-info" style="color: #1F1F1F;"></i> More </a>
         <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
-          <a class="dropdown-item" href="#" style="color: #1F1F1F;">Business</a>
-          <a class="dropdown-item" href="#" style="color: #1F1F1F;">About Me</a>
+          <a class="nav-link" href="https://www.twitch.tv/papaelgunmen" target="_blank" style="color: #1F1F1F;">
+            <i class="fa fa-twitch" style="color: #1F1F1F;"></i> Twitch
+            <span class="sr-only">(current)</span>
+          </a>
+          <a class="nav-link" href="https://www.speedrun.com/user/PapaElGunmen" target="_blank" style="color: #1F1F1F;">
+            <i class="fa fa-trophy" style="color: #1F1F1F;"></i> Speedrun.com
+            <span class="sr-only">(current)</span>
+          </a>
+          <a class="nav-link" href="#" style="color: #1F1F1F;">
+            <i class="fa fa-info-circle" style="color: #1F1F1F;"></i>  About Me
+            <span class="sr-only">(current)</span>
+          </a>
         </div>
       </li>
     </ul>
@@ -57,16 +63,22 @@
 
 <!-- MAIN -->
 <div class="bg-one parallax">  
-  
+  <div style="height: 100%; display: flex; flex-direction: column; justify-content: center; text-align: center;" data-aos="fade-up">
+    <h1 class="titlenb py-2">Asier Nuñez</h1>
+    <p class="textnw">Developer, Designer & Musician</p>
+    <div class="py-3">
+      <!--a href="#body" class="boton boton-primary" >Learn More</a-->
+      <a href="#body"><i class="fa fa-angle-double-down fa-4x"></i></a>
+    </div>
+  </div>
   
 </div>
-
 <div class="container-fluid" id="body">
   <!-- CODING PROJECTS -->
   <div class="row py-4" style="background-color: #1F1F1F;">
       <div class="col-sm-1"></div>
     <div class="col-sm-4" style="display: flex; justify-content: center; flex-direction: column;">
-      <h1 class="titlen">Coding Projects</h1>
+      <h1 class="titlenb">Coding Projects</h1>
       <p class="textn"></p>
     </div>
     <div class="col-sm-2"></div>
@@ -130,6 +142,19 @@
           <div class="col-sm-1"></div>
         </div>
       </div>
+
+    <!-- RUNNER -->
+    <div class="container-fluid py-4">
+      <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-7" style="background-image: url(img/CodingProjects/ds3.jpg); background-size: cover; background-position: center; min-height: 40vh;"></div>
+        <a style="text-decoration: none; cursor: pointer;" onclick="location.href='https://github.com/Asiern/Runner';"><div class="col-sm-3 carta cartatext">
+            <h1 class="title">RunnerR</h1>
+            <p  class="text">Nintendo DS Game</p>
+        </a></div>
+        <div class="col-sm-1"></div>
+      </div>
+    </div>
   </div>
 
   <!-- WEB DESIGNS -->
@@ -137,11 +162,11 @@
   <div class="row py-4" style="background-color: #1F1F1F;">
     <div class="col-sm-1"></div>
       <div class="col-sm-4">
-        <img src="img/XD/Group 1.png" style="max-width: 100%; max-height: 100%; object-fit: contain;"></img>
+        <img src="img/XD//Group 6.png" style="max-width: 100%; max-height: 100%; object-fit: contain;"></img>
       </div>
       <div class="col-sm-2"></div>
       <div class="col-sm-4" style="display: flex; justify-content: center; flex-direction: column;">
-        <h1 class="titlen">Web Designs</h1>
+        <h1 class="titlenb" style="text-align: right;">Web Designs</h1>
         <p class="textn"></p>
       </div>      
       <div class="col-sm-1"></div>
@@ -150,44 +175,49 @@
   <div class="py-5"></div>
 
 
-  <!--<div class="container-fluid py-5">
-    <div class="row px-3 py-3">
-      <div class="col-sm-4 px-2">
-        <div style="background-color: #1F1F1F;">
-          <img src="img/WebDesigns/SSC.png" style="object-fit:inherit; max-width: 100%; max-height: 100%;"></img>
-        </div>
-      </div>
-      <div class="col-sm-4 px-2">
-        <div style="background-color: #1F1F1F; background-image: url(img/ssopreview.jpg); height: 500px;">
-        </div>
-      </div>
-      <div class="col-sm-4 px-2">
-        <div style="background-color: #1F1F1F; background-image: url(img/dsscpreview.jpg); height: 500px;">
-        </div>
-      </div>
+  <div class="container-fluid py-5">
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-7" style="background-image: url(img/WebDesigns/SSC.png); background-size: auto; background-position: center; min-height: 40vh; background-color: #1F1F1F;"></div>
+      <a style="text-decoration: none; cursor: pointer;" href="SSC/index.html"><div class="col-sm-3 carta cartatext">
+          <h1 class="title">SSC</h1>
+          <p  class="text"></p>
+      </a></div>      
+      <div class="col-sm-1"></div>
     </div>
-
-    <div class="row px-3 py-3">
-        <div class="col-sm-4 px-2">
-          <div style="background-color: #1F1F1F; background-image: url(img/lcpreview.jpg); height: 500px;">
-          </div>
-        </div>
-        <div class="col-sm-4 px-2">          
-        </div>
-        <div class="col-sm-4 px-2">         
-        </div>
-      </div>
   </div>
 </div>
 
-<footer class="container-fluid">-->
-    
+<!-- DESIGNS -->
+<div class="py-5"></div>
+<div class="container-fluid">
+<div class="row py-4" style="background-color: #1F1F1F;">
+  <div class="col-sm-1"></div>
+    <div class="col-sm-4" style="display: flex; justify-content: center; flex-direction: column;">
+      <h1 class="titlenb">Designs</h1>
+      <p class="textn"></p>
+    </div>  
+    <div class="col-sm-2"></div>
+    <div class="col-sm-4">
+      <img src="img/XD//Group 7.png" style="max-width: 100%; max-height: 100%; object-fit: contain;"></img>
+    </div>        
+    <div class="col-sm-1"></div>
+</div>
+</div>
+
+<footer class="container-fluid py-5">
+    <div style="text-align: center;">
+      <a class="nav-link" href="#top" style="color: #1F1F1F;">
+        <i class="fa fa-chevron-up" style="color: #1F1F1F;"></i>  Back to Top
+        <span class="sr-only">(current)</span>
+      </a>
+    </div>
 </footer>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
-      duration: 1000,
+      duration: 1500,
     });
 </script>
 </body>

@@ -1,10 +1,9 @@
 $(document).ready(function(){
-  var altura = $('.nav').offset().top;
     $(window).on('scroll', function(){
-    if ( $(window).scrollTop() > altura ){
-      $('.nav').addClass('sticky');
+    if ( $(window).scrollTop() > 0 ){
+      $('.navbar').addClass('shadow');
     } else {
-      $('.nav').removeClass('sticky');
+      $('.navbar').removeClass('shadow');
     }
     });
   });
