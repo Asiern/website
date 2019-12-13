@@ -4,28 +4,23 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Asiern</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <link rel="icon" href="favicon.png">
   <script src="js/scripts.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="css/aos.css">
-  <script src="js/parallax.js"></script>
-  <script src="js/aos.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <!-- #282828 -->
 <!-- Pallete: #F2F2F2 #BFBFBF #737373 #262626 #0D0D0D -->
-<body style="background-color: #fff" id="top">
+<body style="background-color: #fff;" id="top">
 <!-- NAV -->
-<nav class="mb-1 navbar navbar-expand-lg py-3" style="position: fixed; width: 100%; z-index: 999;" id="nav">
+<nav class="shadow mb-1 navbar navbar-expand-lg py-3" style="position: fixed; width: 100%; z-index: 999;" id="nav">
   <a class="navbar-brand" href="index.html" style="width:40px;">
     <img src="logo.svg"/>               
   </a>
-  <a class="navbar-brand" href="index.html" style="color: #1F1F1F; font-family: Gotham-Medium;">Asier Nuñez</a>
+  <a class="navbar-brand" href="index.html" style="font-family: Gotham-Medium; color: #1F1F1F;">Asier Nuñez</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
     aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"><i class="fa fa-bars" style="color:#1F1F1F; font-size:28px;"></i></span>
@@ -38,7 +33,25 @@
           <span class="sr-only">(current)</span>
         </a>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item active">
+        <a class="nav-link" href="https://www.twitch.tv/papaelgunmen" target="_blank" style="color: #1F1F1F;">
+          <i class="fa fa-twitch" style="color: #1F1F1F;"></i> Twitch
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="https://www.speedrun.com/user/PapaElGunmen" target="_blank" style="color: #1F1F1F;">
+          <i class="fa fa-trophy" style="color: #1F1F1F;"></i> Speedrun
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#" target="_blank" style="color: #1F1F1F;">
+          <i class="fa fa-info" style="color: #1F1F1F;"></i> About
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <!--li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false" style="color: #1F1F1F;">
           <i class="fa fa-info" style="color: #1F1F1F;"></i> More </a>
@@ -56,162 +69,70 @@
             <span class="sr-only">(current)</span>
           </a>
         </div>
-      </li>
+      </!--li-->
     </ul>
   </div>
 </nav>
 
 <!-- MAIN -->
-<div class="bg-one parallax">  
-  <div style="height: 100%; display: flex; flex-direction: column; justify-content: center; text-align: center;" data-aos="fade-up">
-    <h1 class="titlenb py-2">Asier Nuñez</h1>
-    <p class="textnw">Developer, Designer & Musician</p>
-    <div class="py-3">
-      <!--a href="#body" class="boton boton-primary" >Learn More</a-->
-      <a href="#body"><i class="fa fa-angle-double-down fa-4x"></i></a>
-    </div>
-  </div>
-  
-</div>
-<div class="container-fluid" id="body">
-  <!-- CODING PROJECTS -->
-  <div class="row py-4" style="background-color: #1F1F1F;">
-      <div class="col-sm-1"></div>
-    <div class="col-sm-4" style="display: flex; justify-content: center; flex-direction: column;">
-      <h1 class="titlenb">Coding Projects</h1>
-      <p class="textn"></p>
-    </div>
-    <div class="col-sm-2"></div>
-    <div class="col-sm-4">
-      <img src="img/XD/Group 1.png" style="max-width: 100%; max-height: 100%; object-fit: contain;"></img>
-    </div>
-    <div class="col-sm-1"></div>
-  </div>
-
-  <div class="py-5"></div>
-
-  <div class="container-fluid py-5" style="background-color: #Fff;">
-    <!-- LEAGUE CONFIG -->
-    <div class="container-fluid py-4">
-      <div class="row">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-7 " style="background-image: url(img/CodingProjects/bmdiana.jpg); background-size: cover; background-position: center; min-height: 40vh;"></div>
-        <a style="text-decoration: none; cursor: pointer;" onclick="location.href='https://github.com/Asiern/LeagueConfig';"><div class="col-sm-3 carta cartatext">
-            <h1 class="title">League Config</h1>
-            <p  class="text">League of Legends ingame config manager.</p>
-        </a></div>
-        <div class="col-sm-1"></div>
-      </div>
-    </div>  
-
-    <!-- SEKIRO SAVE ORGANIZER -->
-    <div class="container-fluid py-4">
-      <div class="row">
-        <div class="col-sm-1"></div>        
-        <a style="text-decoration: none; cursor: pointer;" onclick="location.href='https://github.com/Asiern/Sekiro-Save-Organizer';"><div class="col-sm-3 carta cartatext">
-            <h1 class="title">Sekiro Save Organizer</h1>
-            <p  class="text">Save Organizer for Sekiro: Shadows Die Twice</p>
-        </a></div>
-        <div class="col-sm-7" style="background-image: url(img/CodingProjects/sekiro.jpg); background-size: cover; background-position: center; min-height: 40vh;"></div>
-        <div class="col-sm-1"></div>
-      </div>
-    </div>
-
-      <!-- DS3 STAT CALC -->
-    <div class="container-fluid py-4">
-      <div class="row">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-7" style="background-image: url(img/CodingProjects/ds3.jpg); background-size: cover; background-position: center; min-height: 40vh;"></div>
-        <a style="text-decoration: none; cursor: pointer;" onclick="location.href='https://github.com/Asiern/DarkSoulsStatCalculator';"><div class="col-sm-3 carta cartatext">
-            <h1 class="title">DS3 Stat Calc</h1>
-            <p  class="text"></p>
-        </a></div>
-        <div class="col-sm-1"></div>
-      </div>
-    </div>
-
-    <!-- LEAGUE CLIENT -->
-    <div class="container-fluid py-4">
-        <div class="row">
-          <div class="col-sm-1"></div>
-          <a style="text-decoration: none; cursor: pointer;" onclick="location.href='https://github.com/Asiern/LeagueClient';"><div class="col-sm-3 carta cartatext">
-              <h1 class="title">League Client</h1>
-              <p  class="text"></p>
-          </a></div>
-          <div class="col-sm-7" style="background-image: url(img/CodingProjects/leagueclient.jpg); background-size: cover; background-position: center; min-height: 40vh;"></div>
-          <div class="col-sm-1"></div>
+<div class="bg-one1 parallax">  
+    <div class="row justify-content-md-center">    
+        <div class="position-fixed h-100 col-md-auto d-flex align-items-center">
+            <div class="text-center vertical-center out" style="position: relative;">
+                <h1 class="titlenb py-2 outtext">Asier Nuñez</h1>
+                <p class="textnw outtext">Developer, Designer & Musician</p>
+                <a role="button" href="#body" class="boton boton-primary">Learn more</a>
+            </div>
         </div>
-      </div>
-
-    <!-- RUNNER -->
-    <div class="container-fluid py-4">
-      <div class="row">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-7" style="background-image: url(img/CodingProjects/ds3.jpg); background-size: cover; background-position: center; min-height: 40vh;"></div>
-        <a style="text-decoration: none; cursor: pointer;" onclick="location.href='https://github.com/Asiern/Runner';"><div class="col-sm-3 carta cartatext">
-            <h1 class="title">RunnerR</h1>
-            <p  class="text">Nintendo DS Game</p>
-        </a></div>
-        <div class="col-sm-1"></div>
-      </div>
     </div>
-  </div>
-
-  <!-- WEB DESIGNS -->
-  <div class="py-5"></div>
-  <div class="row py-4" style="background-color: #1F1F1F;">
-    <div class="col-sm-1"></div>
-      <div class="col-sm-4">
-        <img src="img/XD//Group 6.png" style="max-width: 100%; max-height: 100%; object-fit: contain;"></img>
-      </div>
-      <div class="col-sm-2"></div>
-      <div class="col-sm-4" style="display: flex; justify-content: center; flex-direction: column;">
-        <h1 class="titlenb" style="text-align: right;">Web Designs</h1>
-        <p class="textn"></p>
-      </div>      
-      <div class="col-sm-1"></div>
-  </div>
-
-  <div class="py-5"></div>
-
-
-  <div class="container-fluid py-5">
-    <div class="row">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-7" style="background-image: url(img/WebDesigns/SSC.png); background-size: auto; background-position: center; min-height: 40vh; background-color: #1F1F1F;"></div>
-      <a style="text-decoration: none; cursor: pointer;" href="SSC/index.html"><div class="col-sm-3 carta cartatext">
-          <h1 class="title">SSC</h1>
-          <p  class="text"></p>
-      </a></div>      
-      <div class="col-sm-1"></div>
+</div>
+<div class="py-5" id="body"></div>
+<div class="container-fluid p-5" style="min-height: 100vh;">
+  <div class="row">
+    <div class="col-lg-4 col-md-6 col-sm-12 py-2">
+      <a href="coding.html"><div class="imagewdes">
+        <img src="img/1.jpeg" class="image">
+        <div class="overlay">
+          <div class="text">
+            <h1 class="textn">Coding Projects</h1>
+          </div>
+        </div>
+      </div></a>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12 py-2">
+      <a href="aa"><div class="imagewdes">
+            <img src="img/2.jpeg" class="image">
+            <div class="overlay">
+              <div class="text">
+                <h1 class="textn">Designs</h1>
+              </div>
+            </div>
+          </div></a>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12 py-2">
+      <a href="aa"><div class="imagewdes">
+            <img src="img/3.jpeg" class="image">
+            <div class="overlay">
+              <div class="text">
+                <h1 class="textn">Web Designs</h1>
+              </div>
+            </div>
+          </div></a>
     </div>
   </div>
 </div>
-
-<!-- DESIGNS -->
 <div class="py-5"></div>
-<div class="container-fluid">
-<div class="row py-4" style="background-color: #1F1F1F;">
-  <div class="col-sm-1"></div>
-    <div class="col-sm-4" style="display: flex; justify-content: center; flex-direction: column;">
-      <h1 class="titlenb">Designs</h1>
-      <p class="textn"></p>
-    </div>  
-    <div class="col-sm-2"></div>
-    <div class="col-sm-4">
-      <img src="img/XD//Group 7.png" style="max-width: 100%; max-height: 100%; object-fit: contain;"></img>
-    </div>        
-    <div class="col-sm-1"></div>
-</div>
-</div>
+<!--div style="text-align: center;">
+  <a class="nav-link" href="#top" style="color: #1F1F1F;">
+    <i class="fa fa-chevron-up" style="color: #1F1F1F;"></i>  Back to Top
+    <span class="sr-only">(current)</span>
+  </a>
+</div-->
 
-<footer class="container-fluid py-5">
-    <div style="text-align: center;">
-      <a class="nav-link" href="#top" style="color: #1F1F1F;">
-        <i class="fa fa-chevron-up" style="color: #1F1F1F;"></i>  Back to Top
-        <span class="sr-only">(current)</span>
-      </a>
-    </div>
+<footer class="container-fluid py-5 footer">
+  <a href="#" class="fa fa-github fa-2x px-2"></a>
+  <a href="" class="fa fa-twitch fa-2x px-2"></a>
+  <a href="" class="fa fa-trophy fa-2x px-2"></a>
 </footer>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

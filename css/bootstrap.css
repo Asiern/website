@@ -4,6 +4,71 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+ @media only screen and (max-width: 600px) {
+   main{
+     height: 50%;
+   }
+ }
+ .main{
+   height: 100%;
+ }
+ .imagewdes{
+  position: relative;
+ }
+ .image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000;
+}
+
+.imagewdes:hover .overlay {
+  opacity: 0.95;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+ .fa{
+   text-decoration: none;
+   color: #1F1F1F;
+ }
+ .fa:hover{
+  background: -webkit-gradient(linear, left top, left bottom, from(#ef32d9), to(#89fffd));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+ }
+ .test{
+   height: 40vh;
+   background-image: linear-gradient(to right, #5433FF 0, #20BDFF 50%, #A5FECB 100%);
+ }
+ .footer{
+   text-align: center;
+ }
+ .design{
+   min-height: 20vh;
+   background-size: cover;
+ }
  .bgwhite{
    background-color: #F2F2F2;
  }
@@ -16,10 +81,19 @@
   padding: 25vmin 0;
   background-size: cover;
 }
-
+.fixed{
+  display: flex;
+  position: fixed;
+  align-items: center;
+}
+.bg-one1{
+  height: 100vh;
+  /**background-image: linear-gradient(to right, #5433FF 0, #20BDFF 50%, #A5FECB 100%);**/
+  background-image: linear-gradient(to right, #FEAC5E 0,#C779D0 50%, #4BC0C8 100%);
+}
 .bg-one {
   @extend %bg;
-  background-image: url(../img/bg12.jpg);
+  background-image: url(../img/bg.jpg);
   height: 100vh;
   background-size: cover;
 }
@@ -69,14 +143,17 @@
  @font-face{
    font-family: sanfrancisco;
    src: url(../fonts/SanFranciscoText-Light.otf);
+   font-display: swap;
  }
  @font-face{
    font-family: Gotham;
    src: url(../fonts/GothamLight.ttf);
+   font-display: swap;
  }  
  @font-face{
    font-family: Gotham-Medium;
    src: url(../fonts/GothamMedium.ttf);
+   font-display: swap;
  }
  .flex-center {
   width: 100%;
@@ -159,12 +236,12 @@
 .titlenb{
   color: #F2F2F2;
   font-family: Gotham-Medium;
-  font-size: 50px;
+  font-size: 5.5rem;
 }
 .textnw{
   color: #F2F2F2;
   font-family: Gotham;
-  font-size: 20px;
+  font-size: 1.5rem;
 }
  .textn{
   color: #BFBFBF;
@@ -206,10 +283,6 @@
     margin:20px 0px;
 }
 
-.fa{
-     color:#F2F2F2;
-}
-
 .boton{
   font-family: Gotham-Medium;
   display: inline-block;
@@ -226,7 +299,7 @@
   padding: 0.4rem 1.5rem;
   font-size: 1.1rem;
   line-height: 2;
-  border-radius: 0.8rem;
+  border-radius: 0.3rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .boton:hover {
@@ -249,15 +322,16 @@ fieldset:disabled a.boton {
 }
 
 .boton-primary {
-  color: #F2F2F2;
-  background-color: transparent;
-  border-color: #fff;
+  color: #1F1F1F;
+  background-color: #fff;
+  border-color: transparent;
 }
 
 .boton-primary:hover {
   color: #1F1F1F;
-  background-color:#F2F2F2;
+  background-color: #fff;
   border-color: transparent;
+  box-shadow: 0 0 0 0.2rem rgba(40, 40, 40, 0.25);
 }
 .boton-primaryn {
   color: #0D0D0D;

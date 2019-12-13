@@ -3,7 +3,13 @@ $(document).ready(function(){
     if ( $(window).scrollTop() > 0 ){
       $('.navbar').addClass('shadow');
     } else {
-      $('.navbar').removeClass('shadow');
+      $('.navbar').removeClass('');
     }
     });
+    $(window).on('scroll', function () {
+      var pixs = $(document).scrollTop()
+      pixs = pixs / 100;
+      $(".out").css({"-webkit-filter": "blur("+pixs+"px)","filter": "blur("+pixs+"px),"}) 
+      $(".out").css("opacity", 1- $(window).scrollTop() / 400)    
+  });
   });
