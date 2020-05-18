@@ -74,7 +74,8 @@
  }
  .shadow{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: #F2F2F2;
+  background-color: #fff;
+  position: fixed;
  }
  @import url('https://fonts.googleapis.com/css?family=Monoton');
  %bg {
@@ -89,7 +90,10 @@
 .bg-one1{
   height: 100vh;
   /**background-image: linear-gradient(to right, #5433FF 0, #20BDFF 50%, #A5FECB 100%);**/
-  background-image: linear-gradient(to right, #FEAC5E 0,#C779D0 50%, #4BC0C8 100%);
+  /**background-image: linear-gradient(to right, #FEAC5E 0,#C779D0 50%, #4BC0C8 100%);**/
+  background-image: url(../img/sits.jpg);
+  background-attachment: fixed;
+
 }
 .bg-one {
   @extend %bg;
@@ -234,7 +238,11 @@
   font-size: xx-large;
 }
 .titlenb{
-  color: #F2F2F2;
+  /**background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f093fb),color-stop(1, #f5576c) );**/
+  
+  color:#2E2e2e;
+  -webkit-background-clip: text;
+  background-clip: text;
   font-family: Gotham-Medium;
   font-size: 5.5rem;
 }
@@ -244,7 +252,7 @@
   font-size: 1.5rem;
 }
  .textn{
-  color: #BFBFBF;
+  color: #2e2e2e;
   font-family: Gotham;
 }
  .bgcard1{
@@ -424,7 +432,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #F2F2F2;
+  background-color: #fff;
 }
 
 [tabindex="-1"]:focus {
