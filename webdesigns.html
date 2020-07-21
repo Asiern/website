@@ -1,98 +1,154 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Asiern</title>
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <link rel="icon" href="favicon.png">
-  <script src="js/scripts.js"></script>
-  <script src="https://kit.fontawesome.com/74d793b2f8.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Asiern</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="favicon.png" />
+    <script src="js/scripts.js"></script>
+    <script
+      src="https://kit.fontawesome.com/74d793b2f8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <!-- #282828 -->
+  <!-- Pallete: #F2F2F2 #BFBFBF #737373 #262626 #0D0D0D -->
+  <body style="background-color: #fff;" id="top">
+    <!-- NAV -->
+    <nav
+      class="mb-1 navbar navbar-expand-lg py-3 shadow"
+      style="position: fixed; width: 100%; z-index: 999;"
+      id="nav"
+    >
+      <a class="navbar-brand" href="index.html" style="width: 40px;">
+        <img src="logo.svg" />
+      </a>
+      <a
+        class="navbar-brand"
+        href="index.html"
+        style="font-family: Gotham-Medium; color: #1f1f1f;"
+        >Asier Nuñez</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent-4"
+        aria-controls="navbarSupportedContent-4"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"
+          ><i class="fa fa-bars" style="color: #1f1f1f; font-size: 28px;"></i
+        ></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a
+              class="nav-link"
+              href="https://github.com/Asiern"
+              target="_blank"
+              style="color: #1f1f1f;"
+            >
+              <i class="fa fa-github fa-lg" style="color: #1f1f1f;"></i>
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a
+              class="nav-link"
+              href="https://www.twitch.tv/asiern_"
+              target="_blank"
+              style="color: #1f1f1f;"
+            >
+              <i class="fa fa-twitch fa-lg" style="color: #1f1f1f;"></i>
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a
+              class="nav-link"
+              href="https://www.speedrun.com/user/Asiern"
+              target="_blank"
+              style="color: #1f1f1f;"
+            >
+              <i class="fa fa-trophy fa-lg" style="color: #1f1f1f;"></i>
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a
+              class="nav-link"
+              href="https://www.youtube.com/channel/UCIhHSf7xjEVZqbm_oP9knmA"
+              target="_blank"
+              style="color: #1f1f1f;"
+            >
+              <i class="fa fa-youtube fa-lg" style="color: #1f1f1f;"></i>
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-</head>
-<!-- #282828 -->
-<!-- Pallete: #F2F2F2 #BFBFBF #737373 #262626 #0D0D0D -->
-<body style="background-color: #fff;" id="top">
-<!-- NAV -->
-<nav class="mb-1 navbar navbar-expand-lg py-3 shadow " style="position: fixed; width: 100%; z-index: 999;" id="nav">
-  <a class="navbar-brand" href="index.html" style="width:40px;">
-    <img src="logo.svg"/>               
-  </a>
-  <a class="navbar-brand" href="index.html" style="font-family: Gotham-Medium; color: #1F1F1F;">Asier Nuñez</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
-    aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"><i class="fa fa-bars" style="color:#1F1F1F; font-size:28px;"></i></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="https://github.com/Asiern" target="_blank" style="color: #1F1F1F;">
-          <i class="fa fa-github fa-lg" style="color: #1F1F1F;"></i>
-          <span class="sr-only">(current)</span>
-        </a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="https://www.twitch.tv/asiern_" target="_blank" style="color: #1F1F1F;">
-          <i class="fa fa-twitch fa-lg" style="color: #1F1F1F;"></i>
-          <span class="sr-only">(current)</span>
-        </a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="https://www.speedrun.com/user/Asiern" target="_blank" style="color: #1F1F1F;">
-          <i class="fa fa-trophy fa-lg" style="color: #1F1F1F;"></i>
-          <span class="sr-only">(current)</span>
-        </a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="https://www.youtube.com/channel/UCIhHSf7xjEVZqbm_oP9knmA" target="_blank" style="color: #1F1F1F;">
-          <i class="fa fa-youtube fa-lg" style="color: #1F1F1F;"></i>
-          <span class="sr-only">(current)</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-<!-- MAIN -->
-<div class="py-5" id="body"></div>
-<div class="container-fluid p-5" style="min-height: 100vh;">
-  <div class="row">
-    <div class="col-lg-4 col-md-6 col-sm-12 py-2">
-      <a href="SSC/index.html"><div class="imagewdes">
-        <img src="img/WebDesigns/SSC.png" class="image" style="background-color: #f3f3a5;">
-        <div class="overlay">
-          <div class="text">
-            <h1 class="textn">SSC</h1>
-          </div>
+    <!-- MAIN -->
+    <div class="py-5" id="body"></div>
+    <div class="container-fluid p-5" style="min-height: 100vh;">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 py-2">
+          <a href="SSC/index.html"
+            ><div class="imagewdes">
+              <img
+                src="img/WebDesigns/SSC.png"
+                class="image"
+                style="background-color: #f2f2f2;"
+              />
+              <div class="overlay">
+                <div class="text">
+                  <h1 class="textn">SSC</h1>
+                </div>
+              </div>
+            </div></a
+          >
         </div>
-      </div></a>
-    </div>
-    <div class="col-lg-4 col-md-6 col-sm-12 py-2">
-      <a href="ZeroxDesign/index.html"><div class="imagewdes">
-        <img src="img/WebDesigns/zdlogo.png" class="image" style="background-color: #2E2E2E;">
-        <div class="overlay">
-          <div class="text">
-            <h1 class="textn">ZeroxDesign</h1>
-          </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 py-2">
+          <a href="ZeroxDesign/index.html"
+            ><div class="imagewdes">
+              <img
+                src="img/WebDesigns/zdlogo.png"
+                class="image"
+                style="background-color: #2e2e2e;"
+              />
+              <div class="overlay">
+                <div class="text">
+                  <h1 class="textn">ZeroxDesign</h1>
+                </div>
+              </div>
+            </div></a
+          >
         </div>
-      </div></a>
+      </div>
     </div>
-  </div>
-</div>
 
-<footer class="container-fluid py-5 footer">
-  <a href="#" class="fa fa-github fa-2x px-2"></a>
-  <a href="" class="fa fa-twitch fa-2x px-2"></a>
-  <a href="" class="fa fa-trophy fa-2x px-2"></a>
-</footer>
+    <footer class="container-fluid py-5 footer">
+      <a href="#" class="fa fa-github fa-2x px-2"></a>
+      <a href="" class="fa fa-twitch fa-2x px-2"></a>
+      <a href="" class="fa fa-trophy fa-2x px-2"></a>
+    </footer>
 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1500,
-    });
-</script>
-</body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+      });
+    </script>
+  </body>
 </html>
